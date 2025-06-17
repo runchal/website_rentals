@@ -1,0 +1,482 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+header {
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    padding: 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+li a {
+    text-decoration: none;
+    color: #333;
+    padding: 1rem;
+}
+
+.cart a {
+    color: #333;
+}
+.hero {
+    text-align: center;
+    padding: 8rem 1rem;
+    background-color: #2b2b2b;
+    color: #fff;
+}
+
+.hero .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    color: #ccc;
+}
+
+.hero button {
+    background-color: #fff;
+    color: #2b2b2b;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+
+.products {
+    padding: 2rem 1rem;
+}
+
+.products h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.section-header h2 {
+    margin-bottom: 0;
+}
+
+.view-all {
+    color: #333;
+    text-decoration: underline;
+}
+
+.carousel-wrapper {
+    position: relative;
+}
+
+.product-grid {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch; /* for smooth scrolling on iOS */
+    scrollbar-width: none; /* for Firefox */
+}
+
+.product-grid::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+}
+
+.carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.carousel-arrow.left {
+    left: -1.5rem;
+}
+
+.carousel-arrow.right {
+    right: -1.5rem;
+}
+
+.product-card {
+    flex: 0 0 300px; /* This ensures the cards have a fixed width and don't shrink */
+    margin-right: 1.5rem; /* This provides the spacing between cards */
+    scroll-snap-align: start;
+    position: relative;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.product-image {
+    background-color: #f0f0f0;
+    height: 200px;
+    margin-bottom: 1.5rem;
+}
+
+.product-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.product-card .tag {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: #333;
+    color: #fff;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.875rem;
+}
+
+.product-card .tag.popular {
+    background-color: #ffc107;
+    color: #333;
+}
+
+.product-card .tag.new {
+    background-color: #28a745;
+}
+
+
+.product-card .specs {
+    color: #666;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.product-card .specs svg {
+    width: 1rem;
+    height: 1rem;
+}
+
+
+.product-card .price {
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.product-card .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.product-card .rent {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.product-card .learn-more {
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #333;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.industries {
+    background-color: #f7f7f7;
+    padding: 2rem 1rem;
+}
+
+.industries h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.industry-grid {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch; /* for smooth scrolling on iOS */
+    scrollbar-width: none; /* for Firefox */
+}
+
+.industry-grid::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+}
+
+.industry-card {
+    flex: 0 0 300px; /* This ensures the cards have a fixed width and don't shrink */
+    margin-right: 1.5rem; /* This provides the spacing between cards */
+    scroll-snap-align: start;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.industry-image {
+    background-color: #f0f0f0;
+    height: 200px;
+    margin-bottom: 1.5rem;
+}
+
+.industry-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.industry-card p {
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.industry-card .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.industry-card .rent {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.industry-card .advantages {
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #333;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.advantages-section {
+    padding: 2rem 1rem;
+}
+
+.advantages-section h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.advantages-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2rem;
+    grid-template-areas:
+        "a1 a2 a3"
+        "a4 a5 a5";
+}
+
+.advantage-card {
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1.5rem;
+}
+
+.advantage-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.advantage-card p {
+    color: #666;
+}
+
+.advantage-card.a1 { grid-area: a1; }
+.advantage-card.a2 { grid-area: a2; }
+.advantage-card.a3 { grid-area: a3; }
+.advantage-card.a4 { grid-area: a4; }
+.advantage-card.a5 { grid-area: a5; }
+
+.testimonials {
+    background-color: #f7f7f7;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.testimonial-card {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.testimonial-card .quote {
+    font-size: 1.5rem;
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+.testimonial-card .author {
+    font-weight: bold;
+}
+
+.testimonial-card .title {
+    color: #666;
+}
+
+.trusted-by {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.trusted-by h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.logos span {
+    font-size: 1.5rem;
+    color: #999;
+}
+
+.logo-svg {
+    height: 40px;
+    width: auto;
+    fill: #999;
+}
+
+
+.cta {
+    background-color: #f7f7f7;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.cta h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.cta p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    color: #666;
+}
+
+.cta button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+
+footer {
+    padding: 4rem 1rem;
+}
+
+.contact-section {
+    padding: 2rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-item {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    padding: 1.5rem 0;
+}
+
+.contact-label {
+    font-weight: bold;
+    color: #333;
+}
+
+.contact-value {
+    color: #666;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.link-column h4 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.link-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.link-column li a {
+    color: #666;
+    text-decoration: none;
+    line-height: 2;
+}
+
+
+
+
+
+
+
