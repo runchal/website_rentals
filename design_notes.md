@@ -24,3 +24,9 @@ This document tracks key design details from the wireframes and learnings from t
 *   **"Trusted By" Logos:** These must be actual logos (SVGs preferred for scalability) and not text placeholders.
 *   **Contact Section:** This is a distinct section *above* the footer, with horizontal dividers between each item.
 *   **Footer:** Contains only the multi-column navigation links, below the contact section.
+
+## Future Enhancements
+
+*   **CSS Refactoring:** Consider refactoring the CSS to use a more modular approach (e.g., BEM) to improve maintainability, especially for shared components like buttons and cards.
+*   **JavaScript Animations:** Add subtle animations (e.g., on-scroll fade-ins, hover effects) to make the site feel more dynamic and polished. This is outside the scope of the static wireframes.
+*   **Performance Optimization:** Once the site is complete, implement performance best practices such as image optimization (e.g., using WebP), and CSS/JS minification.

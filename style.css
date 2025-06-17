@@ -3,6 +3,7 @@
 body {
     font-family: 'Inter', sans-serif;
     margin: 0;
+    background-color: #fff;
 }
 
 .container {
@@ -15,14 +16,14 @@ body {
 
 header {
     background-color: #fff;
-    border-bottom: 1px solid #ccc;
-    padding: 1rem;
+    border-bottom: 1px solid #eee;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 1rem 0;
 }
 
 .logo {
@@ -30,14 +31,14 @@ nav {
     font-weight: bold;
 }
 
-ul {
+nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
 }
 
-li a {
+nav ul li a {
     text-decoration: none;
     color: #333;
     padding: 1rem;
@@ -46,46 +47,48 @@ li a {
 .cart a {
     color: #333;
 }
+
 .hero {
-    text-align: center;
-    padding: 8rem 1rem;
     background-color: #2b2b2b;
     color: #fff;
-}
-
-.hero .container {
-    max-width: 800px;
-    margin: 0 auto;
+    text-align: center;
+    padding: 6rem 0;
 }
 
 .hero h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
     margin-bottom: 1rem;
 }
 
 .hero p {
     font-size: 1.25rem;
-    margin-bottom: 2rem;
     color: #ccc;
-}
-
-.hero button {
-    background-color: #fff;
-    color: #2b2b2b;
-    border: none;
-    padding: 1rem 2rem;
-    font-size: 1.25rem;
-    cursor: pointer;
-}
-
-.products {
-    padding: 2rem 1rem;
-}
-
-.products h2 {
-    text-align: center;
-    font-size: 2rem;
     margin-bottom: 2rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #333;
+    cursor: pointer;
+    font-size: 1rem;
+    text-decoration: none;
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: #333;
+    color: #fff;
+}
+
+.btn-secondary {
+    background-color: #fff;
+    color: #333;
+}
+
+section {
+    padding: 4rem 0;
 }
 
 .section-header {
@@ -96,7 +99,8 @@ li a {
 }
 
 .section-header h2 {
-    margin-bottom: 0;
+    font-size: 2rem;
+    margin: 0;
 }
 
 .view-all {
@@ -108,68 +112,62 @@ li a {
     position: relative;
 }
 
-.product-grid {
+.product-grid,
+.industry-grid {
     display: flex;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch; /* for smooth scrolling on iOS */
-    scrollbar-width: none; /* for Firefox */
+    gap: 1.5rem;
+    padding-bottom: 1.5rem; /* Add padding to make space for scrollbar if it appears */
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; /* Firefox */
 }
 
-.product-grid::-webkit-scrollbar {
-    display: none; /* for Chrome, Safari, and Opera */
+.product-grid::-webkit-scrollbar,
+.industry-grid::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
 }
 
-.carousel-arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 1rem;
-    cursor: pointer;
-    z-index: 1;
-}
-
-.carousel-arrow.left {
-    left: -1.5rem;
-}
-
-.carousel-arrow.right {
-    right: -1.5rem;
-}
-
-.product-card {
-    flex: 0 0 300px; /* This ensures the cards have a fixed width and don't shrink */
-    margin-right: 1.5rem; /* This provides the spacing between cards */
+.product-card,
+.industry-card,
+.advantage-card {
+    flex: 0 0 320px;
     scroll-snap-align: start;
-    position: relative;
-    border: 1px solid #ccc;
-    border-radius: 8px;
+    background-color: #fff;
+    border-radius: 12px;
+    border: 1px solid #eee;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
     padding: 1.5rem;
+    position: relative;
+}
+
+.product-card,
+.industry-card {
     text-align: center;
 }
 
-.product-image {
-    background-color: #f0f0f0;
+.product-image,
+.industry-image {
+    background-color: #f7f7f7;
     height: 200px;
     margin-bottom: 1.5rem;
+    border-radius: 8px;
 }
 
-.product-card h3 {
+.product-card h3,
+.industry-card h3 {
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
 }
 
 .product-card .tag {
     position: absolute;
-    top: 1rem;
-    right: 1rem;
+    top: 1.5rem;
+    right: 1.5rem;
     background-color: #333;
     color: #fff;
-    padding: 0.25rem 0.5rem;
-    border-radius: 4px;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
     font-size: 0.875rem;
 }
 
@@ -182,10 +180,13 @@ li a {
     background-color: #28a745;
 }
 
-
-.product-card .specs {
+.product-card .specs,
+.industry-card p {
     color: #666;
     margin-bottom: 1rem;
+}
+
+.product-card .specs {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -197,135 +198,56 @@ li a {
     height: 1rem;
 }
 
-
 .product-card .price {
     font-weight: bold;
     margin-bottom: 1.5rem;
 }
 
-.product-card .buttons {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-}
-
-.product-card .rent {
-    background-color: #333;
-    color: #fff;
-    border: none;
-    padding: 0.75rem 1.5rem;
-    font-size: 1rem;
-    cursor: pointer;
-}
-
-.product-card .learn-more {
-    background-color: #fff;
-    color: #333;
-    border: 1px solid #333;
-    padding: 0.75rem 1.5rem;
-    font-size: 1rem;
-    cursor: pointer;
-}
-
-.industries {
-    background-color: #f7f7f7;
-    padding: 2rem 1rem;
-}
-
-.industries h2 {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 2rem;
-}
-
-.industry-grid {
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch; /* for smooth scrolling on iOS */
-    scrollbar-width: none; /* for Firefox */
-}
-
-.industry-grid::-webkit-scrollbar {
-    display: none; /* for Chrome, Safari, and Opera */
-}
-
-.industry-card {
-    flex: 0 0 300px; /* This ensures the cards have a fixed width and don't shrink */
-    margin-right: 1.5rem; /* This provides the spacing between cards */
-    scroll-snap-align: start;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 1.5rem;
-    text-align: center;
-}
-
-.industry-image {
-    background-color: #f0f0f0;
-    height: 200px;
-    margin-bottom: 1.5rem;
-}
-
-.industry-card h3 {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-}
-
-.industry-card p {
-    color: #666;
-    margin-bottom: 1rem;
-}
-
+.product-card .buttons,
 .industry-card .buttons {
     display: flex;
     justify-content: center;
     gap: 1rem;
 }
 
-.industry-card .rent {
-    background-color: #333;
-    color: #fff;
-    border: none;
-    padding: 0.75rem 1.5rem;
-    font-size: 1rem;
+.carousel-arrow {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
     cursor: pointer;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
-.industry-card .advantages {
-    background-color: #fff;
-    color: #333;
-    border: 1px solid #333;
-    padding: 0.75rem 1.5rem;
-    font-size: 1rem;
-    cursor: pointer;
+.carousel-arrow:hover {
+    background-color: #f7f7f7;
+}
+
+.carousel-arrow.left {
+    left: -24px;
+}
+
+.carousel-arrow.right {
+    right: -24px;
 }
 
 .advantages-section {
-    padding: 2rem 1rem;
-}
-
-.advantages-section h2 {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 2rem;
+    background-color: #f7f7f7;
 }
 
 .advantages-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 2rem;
-    grid-template-areas:
-        "a1 a2 a3"
-        "a4 a5 a5";
-}
-
-.advantage-card {
-    background-color: #f7f7f7;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 1.5rem;
+    grid-template-rows: auto;
+    gap: 1.5rem;
 }
 
 .advantage-card h3 {
@@ -337,27 +259,30 @@ li a {
     color: #666;
 }
 
-.advantage-card.a1 { grid-area: a1; }
-.advantage-card.a2 { grid-area: a2; }
-.advantage-card.a3 { grid-area: a3; }
-.advantage-card.a4 { grid-area: a4; }
-.advantage-card.a5 { grid-area: a5; }
-
 .testimonials {
-    background-color: #f7f7f7;
-    padding: 2rem 1rem;
     text-align: center;
 }
 
 .testimonial-card {
-    max-width: 600px;
+    max-width: 700px;
     margin: 0 auto;
 }
 
+.testimonial-card .stars {
+    color: #ffc107;
+    margin-bottom: 1.5rem;
+}
+
+.testimonial-card .stars svg {
+    width: 28px;
+    height: 28px;
+}
+
 .testimonial-card .quote {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-style: italic;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.4;
 }
 
 .testimonial-card .author {
@@ -369,13 +294,7 @@ li a {
 }
 
 .trusted-by {
-    padding: 2rem 1rem;
-    text-align: center;
-}
-
-.trusted-by h2 {
-    font-size: 2rem;
-    margin-bottom: 2rem;
+    background-color: #f7f7f7;
 }
 
 .logos {
@@ -383,83 +302,53 @@ li a {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
-}
-
-.logos span {
-    font-size: 1.5rem;
-    color: #999;
+    gap: 3rem;
 }
 
 .logo-svg {
-    height: 40px;
+    height: 36px;
     width: auto;
     fill: #999;
 }
 
-
 .cta {
-    background-color: #f7f7f7;
-    padding: 2rem 1rem;
+    background-color: #2b2b2b;
+    color: #fff;
     text-align: center;
+    padding: 4rem 0;
 }
 
 .cta h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-}
-
-.cta p {
-    font-size: 1.25rem;
-    margin-bottom: 2rem;
-    color: #666;
-}
-
-.cta button {
-    background-color: #333;
-    color: #fff;
-    border: none;
-    padding: 1rem 2rem;
-    font-size: 1.25rem;
-    cursor: pointer;
-}
-
-footer {
-    padding: 4rem 1rem;
+    font-size: 2.5rem;
 }
 
 .contact-section {
-    padding: 2rem 1rem;
-    max-width: 1200px;
-    margin: 0 auto;
+    padding: 3rem 0;
 }
 
 .contact-item {
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid #ccc;
     padding: 1.5rem 0;
+    border-bottom: 1px solid #eee;
 }
 
 .contact-label {
     font-weight: bold;
-    color: #333;
 }
 
-.contact-value {
-    color: #666;
+footer {
+    padding: 4rem 0;
+    background-color: #f7f7f7;
 }
 
 .footer-links {
     display: flex;
     justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 auto;
 }
 
 .link-column h4 {
-    font-size: 1.25rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 .link-column ul {
@@ -469,14 +358,353 @@ footer {
 }
 
 .link-column li a {
-    color: #666;
     text-decoration: none;
+    color: #666;
     line-height: 2;
 }
 
+.industries-page .industry-promo-card {
+    display: flex;
+    background-color: #f7f7f7;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    overflow: hidden;
+}
 
+.industry-promo-card .promo-image {
+    width: 50%;
+    background-color: #e0e0e0;
+}
 
+.industry-promo-card .promo-content {
+    padding: 4rem;
+    width: 50%;
+}
 
+.promo-content .promo-subtitle {
+    display: block;
+    color: #666;
+    margin-bottom: 1rem;
+}
 
+.promo-content h2 {
+    font-size: 2.5rem;
+    margin: 0 0 1rem 0;
+}
 
+.promo-content p {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
 
+/* Product Detail Page */
+.product-detail-page .product-detail-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: start;
+}
+
+.product-gallery .main-image img {
+    width: 100%;
+    border-radius: 12px;
+    background-color: #f7f7f7;
+    border: 1px solid #eee;
+}
+
+.product-gallery .thumbnail-images {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.thumbnail-images img {
+    width: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 1px solid #eee;
+}
+
+.product-info .tag {
+    display: inline-block;
+    background-color: #28a745;
+    color: #fff;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+}
+
+.product-info h1 {
+    font-size: 3rem;
+    margin: 0 0 1rem 0;
+}
+
+.product-info .price {
+    font-size: 1.75rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.product-info .actions {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    align-items: center;
+}
+
+.quantity-selector {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.quantity-selector button {
+    background: none;
+    border: none;
+    padding: 0.75rem 1rem;
+    cursor: pointer;
+    font-size: 1.25rem;
+}
+
+.quantity-selector span {
+    padding: 0 1.5rem;
+    font-size: 1.25rem;
+}
+
+.specs-overview {
+    border-top: 1px solid #eee;
+}
+
+.spec-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.25rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+.product-description,
+.full-specs {
+    margin: 4rem 0;
+}
+
+.product-description h2,
+.full-specs h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.spec-table .spec-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.25rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+.spec-row .spec-label {
+    font-weight: bold;
+}
+
+/* About Page */
+.about-hero {
+    background-color: #2b2b2b;
+    color: #fff;
+    text-align: center;
+    padding: 6rem 0;
+}
+
+.about-hero h1 {
+    font-size: 3.5rem;
+    margin: 0;
+}
+
+.mission-statement {
+    text-align: center;
+    padding: 6rem 0;
+}
+
+.mission-statement h2 {
+    font-size: 2.5rem;
+}
+
+.mission-statement p {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 1rem auto 0 auto;
+}
+
+.team-section {
+    background-color: #f7f7f7;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.team-member-card {
+    text-align: center;
+}
+
+.team-member-image {
+    width: 100%;
+    padding-top: 100%; /* 1:1 Aspect Ratio */
+    background-color: #e0e0e0;
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+}
+
+.team-member-card h3 {
+    margin: 0 0 0.5rem 0;
+}
+
+.team-member-card p {
+    color: #666;
+    margin: 0;
+}
+
+/* Profile Page */
+.profile-page .profile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.profile-details {
+    border: 1px solid #eee;
+    border-radius: 12px;
+    margin-bottom: 4rem;
+}
+
+.profile-detail-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+    border-bottom: 1px solid #eee;
+}
+
+.profile-detail-item:last-child {
+    border-bottom: none;
+}
+
+.detail-label {
+    font-weight: bold;
+}
+
+.order-history-table {
+    border: 1px solid #eee;
+    border-radius: 12px;
+}
+
+.order-history-header,
+.order-history-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 1.5rem;
+    border-bottom: 1px solid #eee;
+}
+
+.order-history-header {
+    font-weight: bold;
+}
+
+.order-history-row:last-child {
+    border-bottom: none;
+}
+
+/* Modal */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1000; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 2rem;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 12px;
+    position: relative;
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Confirmation Page */
+.confirmation-page {
+    text-align: center;
+    padding: 6rem 0;
+}
+
+.confirmation-content svg {
+    width: 80px;
+    height: 80px;
+    color: #28a745;
+    margin-bottom: 2rem;
+}
+
+.confirmation-content h1 {
+    font-size: 2.5rem;
+    margin: 0 0 1rem 0;
+}
+
+.confirmation-content p {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto 2rem auto;
+}
