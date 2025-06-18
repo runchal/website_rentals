@@ -1,0 +1,189 @@
+/* PIXEL PERFECT CSS - Generated from Wireframe Elements Map */
+
+:root {
+    --container-padding: 24px; /* Based on wireframe margins */
+}
+
+/* Header - Exact wireframe dimensions */
+header {
+    height: 80px;
+}
+
+/* Hero Section - Exact wireframe dimensions */
+.hero-wireframe {
+    height: 600px;
+    background: var(--dark-bg);
+    color: white;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+/* Use Cases Section - Battery cards mapping */
+.suggested-use-cases-wireframe {
+    padding: 40px 0;
+}
+
+.use-cases-row {
+    display: grid;
+    grid-template-columns: repeat(3, 260px);
+    gap: 26px;
+    justify-content: start;
+    margin-left: var(--container-padding);
+}
+
+.use-case-small {
+    width: 260px;
+    height: 380px;
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Categories Section - Accessory cards mapping */
+.categories-wireframe {
+    padding: 40px 0;
+    background: #fafafa;
+}
+
+.categories-row {
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    gap: 20px;
+    justify-content: start;
+    margin-left: var(--container-padding);
+}
+
+.category-small {
+    width: 200px;
+    height: 270px;
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Explore Batteries - Battery cards exact */
+.explore-batteries {
+    padding: 40px 0;
+}
+
+.explore-batteries .product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 260px);
+    gap: 26px;
+    justify-content: start;
+    margin-left: var(--container-padding);
+}
+
+.explore-batteries .product-card {
+    width: 260px;
+    height: 380px;
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Accessories - Accessory cards exact */
+.accessories-preview {
+    padding: 40px 0;
+    background: #fafafa;
+}
+
+.accessories-preview .product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    gap: 20px;
+    justify-content: start;
+    margin-left: var(--container-padding);
+}
+
+.accessories-preview .product-card {
+    width: 200px;
+    height: 270px;
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Industries - Industry cards exact */
+.industries-promo {
+    padding: 40px 0;
+}
+
+.industry-promo-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 260px);
+    gap: 26px;
+    justify-content: start;
+    margin-left: var(--container-padding);
+}
+
+.industry-promo-card {
+    width: 260px;
+    height: 380px;
+    background: #f0f0f0;
+    border-radius: 8px;
+    padding: 24px;
+    display: flex;
+    align-items: flex-end;
+}
+
+/* Advantages - Advantage cards exact */
+.advantages {
+    padding: 40px 0;
+    background: #fafafa;
+}
+
+.advantages-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(2, 160px);
+    gap: 20px;
+    justify-content: start;
+    margin-left: var(--container-padding);
+}
+
+.advantage-card {
+    width: 200px;
+    height: 160px;
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Section headers - Based on wireframe positioning */
+.suggested-use-cases-wireframe h2,
+.categories-wireframe h2,
+.section-header h2,
+.industries-promo h2,
+.advantages h2 {
+    font-size: 1rem;
+    margin: 0 0 20px var(--container-padding);
+    font-weight: 600;
+}
+
+/* Container adjustments */
+.container {
+    max-width: 1366px;
+    margin: 0 auto;
+    padding: 0;
+}

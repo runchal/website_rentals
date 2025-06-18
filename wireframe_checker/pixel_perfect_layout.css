@@ -1,0 +1,573 @@
+/* PIXEL PERFECT WIREFRAME LAYOUT - 1366px Base */
+/* All measurements based on wireframe scaled to 50% (actual size) */
+
+:root {
+    --primary: #333;
+    --dark-bg: #2b2b2b;
+    --container-max-width: 1200px;
+    --container-padding: 83px; /* (1366 - 1200) / 2 */
+}
+
+/* Container */
+.container {
+    max-width: var(--container-max-width);
+    margin: 0 auto;
+    padding: 0 var(--container-padding);
+}
+
+/* Header - Exact measurements */
+header {
+    background: white;
+    border-bottom: 1px solid #eee;
+}
+
+.live-data {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f7f7f7;
+    font-size: 0.75rem;
+    color: #666;
+}
+
+nav {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Hero Section - Exact measurements */
+.hero-wireframe {
+    background: var(--dark-bg);
+    color: white;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-wireframe .hero-label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 12px;
+    opacity: 0.8;
+}
+
+.hero-wireframe h1 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0 0 16px 0;
+}
+
+.hero-wireframe .hero-price {
+    font-size: 0.9rem;
+    margin: 0 0 24px 0;
+    opacity: 0.9;
+}
+
+.hero-wireframe .btn {
+    padding: 10px 20px;
+    font-size: 0.8rem;
+}
+
+/* Section Spacing */
+section {
+    padding: 60px 0;
+}
+
+section:nth-child(even) {
+    background: #fafafa;
+}
+
+/* Use Cases Section - 4 cards in row, 280px each */
+.suggested-use-cases-wireframe {
+    padding: 60px 0;
+}
+
+.suggested-use-cases-wireframe h2 {
+    font-size: 1.125rem;
+    margin: 0 0 40px 0;
+    text-align: left;
+}
+
+.use-cases-row {
+    display: grid;
+    grid-template-columns: repeat(4, 280px);
+    gap: 20px;
+    justify-content: center;
+}
+
+.use-case-small {
+    width: 280px;
+    height: 120px;
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.use-case-small .use-case-icon {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+}
+
+.use-case-small h3 {
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+/* Categories Section - 4 cards in row, 280px each */
+.categories-wireframe {
+    padding: 60px 0;
+    background: #fafafa;
+}
+
+.categories-wireframe h2 {
+    font-size: 1.125rem;
+    margin: 0 0 40px 0;
+    text-align: left;
+}
+
+.categories-row {
+    display: grid;
+    grid-template-columns: repeat(4, 280px);
+    gap: 20px;
+    justify-content: center;
+}
+
+.category-small {
+    width: 280px;
+    height: 120px;
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+
+.category-small h3 {
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin: 0 0 8px 0;
+}
+
+.category-small p {
+    color: var(--primary);
+    font-size: 0.7rem;
+    margin: 0;
+}
+
+/* Explore Batteries Section - Product cards 240px wide */
+.explore-batteries {
+    padding: 60px 0;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.section-header h2 {
+    font-size: 1.125rem;
+    margin: 0;
+}
+
+.view-all {
+    color: var(--primary);
+    text-decoration: none;
+    font-size: 0.75rem;
+}
+
+.carousel-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.carousel-arrow {
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    flex-shrink: 0;
+    font-size: 0.75rem;
+}
+
+.explore-batteries .product-grid {
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+    flex: 1;
+}
+
+.explore-batteries .product-card {
+    width: 240px;
+    height: 320px;
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 16px;
+    flex-shrink: 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-card .tag {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: #ff6b35;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.6rem;
+    font-weight: 600;
+}
+
+.product-card .product-image {
+    width: 100%;
+    height: 140px;
+    background: #f0f0f0;
+    border-radius: 6px;
+    margin-bottom: 12px;
+}
+
+.product-card h3 {
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin: 0 0 6px 0;
+    line-height: 1.2;
+}
+
+.product-card .specs {
+    font-size: 0.65rem;
+    color: #666;
+    margin-bottom: 6px;
+}
+
+.product-card .price {
+    font-size: 0.7rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.product-card .buttons {
+    display: flex;
+    gap: 8px;
+    margin-top: auto;
+}
+
+.product-card .btn {
+    padding: 6px 12px;
+    font-size: 0.65rem;
+    flex: 1;
+    text-align: center;
+    border-radius: 4px;
+}
+
+/* Accessories Section - Same as products */
+.accessories-preview {
+    padding: 60px 0;
+    background: #fafafa;
+}
+
+/* Industries Section - 3 cards: large (580px) + 2 small (280px) */
+.industries-promo {
+    padding: 60px 0;
+}
+
+.industries-promo h2 {
+    font-size: 1.125rem;
+    margin: 0 0 40px 0;
+    text-align: left;
+}
+
+.industry-promo-grid {
+    display: grid;
+    grid-template-columns: 580px 280px 280px;
+    gap: 20px;
+    justify-content: center;
+    height: 200px;
+}
+
+.industry-promo-card {
+    background: #f0f0f0;
+    border-radius: 8px;
+    padding: 24px;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    overflow: hidden;
+}
+
+.industry-promo-card .promo-content {
+    position: relative;
+    z-index: 1;
+}
+
+.industry-promo-card h3 {
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin: 0 0 8px 0;
+    color: var(--dark-bg);
+}
+
+.industry-promo-card p {
+    font-size: 0.65rem;
+    line-height: 1.4;
+    margin: 0 0 12px 0;
+    color: #333;
+}
+
+.industry-promo-card .btn {
+    font-size: 0.65rem;
+    padding: 6px 12px;
+}
+
+/* Advantages Section - 3 cards per row, 380px each */
+.advantages {
+    padding: 60px 0;
+    background: #fafafa;
+}
+
+.advantages h2 {
+    font-size: 1.125rem;
+    margin: 0 0 40px 0;
+    text-align: left;
+}
+
+.advantages-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 380px);
+    gap: 20px;
+    justify-content: center;
+}
+
+.advantage-card {
+    width: 380px;
+    height: 160px;
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.advantage-card h3 {
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin: 0 0 8px 0;
+}
+
+.advantage-card p {
+    font-size: 0.65rem;
+    color: #666;
+    line-height: 1.4;
+    margin: 0;
+}
+
+/* Testimonials */
+.testimonials {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 1.125rem;
+    margin: 0 0 40px 0;
+}
+
+.testimonial-card {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.testimonial-card .stars {
+    color: #FFD700;
+    font-size: 1rem;
+    margin-bottom: 16px;
+}
+
+.testimonial-card .quote {
+    font-size: 0.85rem;
+    font-style: italic;
+    line-height: 1.5;
+    margin-bottom: 16px;
+    color: #333;
+}
+
+.testimonial-card .author {
+    font-weight: 600;
+    margin-bottom: 4px;
+    font-size: 0.75rem;
+}
+
+.testimonial-card .title {
+    font-size: 0.7rem;
+    color: #666;
+}
+
+/* Trusted By */
+.trusted-by {
+    padding: 60px 0;
+    background: #fafafa;
+    text-align: center;
+}
+
+.trusted-by h2 {
+    font-size: 1.125rem;
+    margin: 0 0 40px 0;
+}
+
+.trusted-by .logos {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.logo-placeholder {
+    width: 80px;
+    height: 40px;
+    background: #e0e0e0;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #999;
+    font-size: 0.65rem;
+}
+
+/* Bottom CTA */
+.bottom-cta {
+    padding: 80px 0;
+    text-align: center;
+    background: var(--dark-bg);
+    color: white;
+}
+
+.bottom-cta h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0 0 16px 0;
+}
+
+.bottom-cta p {
+    font-size: 0.8rem;
+    margin: 0 0 32px 0;
+    opacity: 0.9;
+}
+
+.bottom-cta .btn {
+    padding: 10px 24px;
+    font-size: 0.75rem;
+}
+
+/* Contact */
+.contact-simple {
+    padding: 40px 0;
+    border-top: 1px solid #e0e0e0;
+}
+
+.contact-simple h2 {
+    font-size: 1rem;
+    margin: 0 0 24px 0;
+}
+
+.contact-row {
+    display: flex;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.contact-row > div {
+    flex: 1;
+    min-width: 160px;
+}
+
+.contact-row h4 {
+    font-size: 0.7rem;
+    font-weight: 600;
+    margin: 0 0 8px 0;
+}
+
+.contact-row p {
+    font-size: 0.65rem;
+    color: #666;
+    margin: 0;
+    line-height: 1.4;
+}
+
+.contact-row a {
+    color: var(--primary);
+    text-decoration: none;
+    font-size: 0.65rem;
+}
+
+/* Responsive breakpoints for smaller screens */
+@media (max-width: 1366px) {
+    .container {
+        padding: 0 40px;
+    }
+    
+    .use-cases-row,
+    .categories-row {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    
+    .industry-promo-grid {
+        grid-template-columns: 1fr;
+        max-width: 580px;
+        margin: 0 auto;
+        height: auto;
+    }
+    
+    .industry-promo-card {
+        height: 200px;
+    }
+    
+    .advantages-grid {
+        grid-template-columns: 1fr;
+        max-width: 380px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .use-cases-row,
+    .categories-row {
+        grid-template-columns: 1fr;
+        max-width: 280px;
+    }
+    
+    .contact-row {
+        flex-direction: column;
+        gap: 24px;
+    }
+}

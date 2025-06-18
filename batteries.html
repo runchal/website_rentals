@@ -8,11 +8,14 @@
     </head>
     <body>
         <header>
+            <div class="live-data">Live data: 1,209,002 kWh served</div>
             <div class="container">
                 <nav>
                     <div class="logo">Humble</div>
+                    <div class="search-bar">
+                        <input type="text" placeholder="Search" />
+                    </div>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
                         <li><a href="batteries.html">Batteries</a></li>
                         <li><a href="accessories.html">Accessories</a></li>
                         <li><a href="industries.html">Industries</a></li>
@@ -45,73 +48,364 @@
             </div>
         </header>
         <main>
-            <section class="product-listing-page">
+            <!-- Hero Section -->
+            <section class="hero battery-hero">
                 <div class="container">
-                    <h1>Batteries</h1>
-                    <div class="full-product-grid">
-                        <div class="product-card">
-                            <div class="product-image"></div>
-                            <h3>Humble 7</h3>
-                            <span class="tag popular">Popular</span>
-                            <p class="specs">
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="24"
-                                    height="24"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    stroke-width="2"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    class="feather feather-clock"
-                                >
-                                    <circle cx="12" cy="12" r="10"></circle>
-                                    <polyline
-                                        points="12 6 12 12 16 14"
-                                    ></polyline></svg
-                                >1kWh Capacity, 6000W Output
-                            </p>
-                            <p class="price">From USD $100/day</p>
+                    <span class="hero-subtitle">Rugged. Powerful. Humble just not meek.</span>
+                    <h1>Meet the Humble 7</h1>
+                    <p>Free delivery. Free backup generators.<br>A support team whenever you need one.</p>
+                    <p class="hero-price">Starting at $100 / Day</p>
+                    <div class="hero-buttons">
+                        <a href="#" class="btn btn-primary">Rent Now</a>
+                        <a href="product-detail.html" class="btn btn-secondary">Learn More</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Under 3000 kWh Section -->
+            <section class="battery-category">
+                <div class="container">
+                    <h2>Under 3000 kWh</h2>
+                    <div class="battery-list-toggle">
+                        <button class="active">List by Use</button>
+                        <button>High to Low</button>
+                        <button>Capacity (kWh)</button>
+                    </div>
+                    <div class="battery-grid">
+                        <div class="battery-card recommended">
+                            <span class="recommendation-tag">Recommended</span>
+                            <div class="battery-image"></div>
+                            <h3>Cinetrix 2.5</h3>
+                            <p class="battery-subtitle">2500 kWh Capacity<br>25000W Output<br>USD $100/day</p>
+                            <div class="battery-specs">
+                                <div class="spec-item">
+                                    <span class="spec-icon">⚡</span>
+                                    <span>1hr</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-icon">🏠</span>
+                                    <span>Indoor</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-icon">📏</span>
+                                    <span>5ft</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-icon">⚖️</span>
+                                    <span>1ft</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-icon">🔌</span>
+                                    <span>1ft</span>
+                                </div>
+                            </div>
                             <div class="buttons">
                                 <a href="#" class="btn btn-primary">Rent</a>
-                                <a
-                                    href="product-detail.html"
-                                    class="btn btn-secondary"
-                                    >Learn More</a
-                                >
+                                <a href="product-detail.html" class="btn btn-link">Learn More</a>
                             </div>
                         </div>
-                        <div class="product-card">
-                            <div class="product-image"></div>
-                            <h3>Humble Basic</h3>
-                            <p class="specs">
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="24"
-                                    height="24"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    stroke-width="2"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    class="feather feather-zap"
-                                >
-                                    <polygon
-                                        points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"
-                                    ></polygon></svg
-                                >1kWh Capacity, 3400W
-                            </p>
-                            <p class="price">From USD $80/day</p>
+                        <div class="battery-card">
+                            <div class="battery-image"></div>
+                            <h3>Cinetrix 2.5</h3>
+                            <p class="battery-subtitle">2500 kWh Capacity<br>25000W Output<br>USD $100/day</p>
+                            <div class="battery-specs">
+                                <div class="spec-item">
+                                    <span class="spec-icon">⚡</span>
+                                    <span>1hr</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-icon">🏠</span>
+                                    <span>Indoor</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-icon">📏</span>
+                                    <span>5ft</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-icon">⚖️</span>
+                                    <span>1ft</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-icon">🔌</span>
+                                    <span>1ft</span>
+                                </div>
+                            </div>
                             <div class="buttons">
                                 <a href="#" class="btn btn-primary">Rent</a>
-                                <a
-                                    href="product-detail.html"
-                                    class="btn btn-secondary"
-                                    >Learn More</a
-                                >
+                                <a href="product-detail.html" class="btn btn-link">Learn More</a>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 3000 to 7000 kWh Section -->
+            <section class="battery-category">
+                <div class="container">
+                    <h2>3000 to 7000 kWh</h2>
+                    <div class="battery-grid">
+                        <div class="battery-card promotion">
+                            <span class="promotion-tag">Promotion — 10% OFF</span>
+                            <div class="battery-image"></div>
+                            <h3>Cinetrix 2.5</h3>
+                            <p class="battery-subtitle">2500 kWh Capacity<br>25000W Output<br>USD $100/day</p>
+                            <div class="battery-specs">
+                                <div class="spec-item">
+                                    <span class="spec-icon">⚡</span>
+                                    <span>1hr</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-icon">🏗️</span>
+                                    <span>Indoor</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-icon">📏</span>
+                                    <span>5ft</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-icon">⚖️</span>
+                                    <span>1ft</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-icon">🔌</span>
+                                    <span>1ft</span>
+                                </div>
+                            </div>
+                            <div class="buttons">
+                                <a href="#" class="btn btn-primary">Rent</a>
+                                <a href="product-detail.html" class="btn btn-link">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="battery-card">
+                            <div class="battery-image"></div>
+                            <h3>Cinetrix 2.5</h3>
+                            <p class="battery-subtitle">2500 kWh Capacity<br>25000W Output<br>USD $100/day</p>
+                            <div class="battery-specs">
+                                <div class="spec-item">
+                                    <span class="spec-icon">⚡</span>
+                                    <span>1hr</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-icon">🏗️</span>
+                                    <span>Indoor</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-icon">📏</span>
+                                    <span>5ft</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-icon">⚖️</span>
+                                    <span>1ft</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-icon">🔌</span>
+                                    <span>1ft</span>
+                                </div>
+                            </div>
+                            <div class="buttons">
+                                <a href="#" class="btn btn-primary">Rent</a>
+                                <a href="product-detail.html" class="btn btn-link">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="battery-card">
+                            <div class="battery-image"></div>
+                            <h3>Cinetrix 2.5</h3>
+                            <p class="battery-subtitle">2500 kWh Capacity<br>25000W Output<br>USD $100/day</p>
+                            <div class="battery-specs">
+                                <div class="spec-item">
+                                    <span class="spec-icon">⚡</span>
+                                    <span>1hr</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-icon">🏗️</span>
+                                    <span>Indoor</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-icon">📏</span>
+                                    <span>5ft</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-icon">⚖️</span>
+                                    <span>1ft</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-icon">🔌</span>
+                                    <span>1ft</span>
+                                </div>
+                            </div>
+                            <div class="buttons">
+                                <a href="#" class="btn btn-primary">Rent</a>
+                                <a href="product-detail.html" class="btn btn-link">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="battery-card promotion">
+                            <span class="promotion-tag">Promotion — 10% OFF</span>
+                            <div class="battery-image"></div>
+                            <h3>Cinetrix 2.5</h3>
+                            <p class="battery-subtitle">2500 kWh Capacity<br>25000W Output<br>USD $100/day</p>
+                            <div class="battery-specs">
+                                <div class="spec-item">
+                                    <span class="spec-icon">⚡</span>
+                                    <span>1hr</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-icon">🏗️</span>
+                                    <span>Indoor</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-icon">📏</span>
+                                    <span>5ft</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-icon">⚖️</span>
+                                    <span>1ft</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-icon">🔌</span>
+                                    <span>1ft</span>
+                                </div>
+                            </div>
+                            <div class="buttons">
+                                <a href="#" class="btn btn-primary">Rent</a>
+                                <a href="product-detail.html" class="btn btn-link">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="battery-card">
+                            <div class="battery-image"></div>
+                            <h3>Cinetrix 2.5</h3>
+                            <p class="battery-subtitle">2500 kWh Capacity<br>25000W Output<br>USD $100/day</p>
+                            <div class="battery-specs">
+                                <div class="spec-item">
+                                    <span class="spec-icon">⚡</span>
+                                    <span>1hr</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-icon">🏗️</span>
+                                    <span>Indoor</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-icon">📏</span>
+                                    <span>5ft</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-icon">⚖️</span>
+                                    <span>1ft</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-icon">🔌</span>
+                                    <span>1ft</span>
+                                </div>
+                            </div>
+                            <div class="buttons">
+                                <a href="#" class="btn btn-primary">Rent</a>
+                                <a href="product-detail.html" class="btn btn-link">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Over 7000 kWh Section -->
+            <section class="battery-category">
+                <div class="container">
+                    <h2>Over 7000 kWh</h2>
+                    <div class="battery-grid">
+                        <div class="battery-card recommended">
+                            <span class="recommendation-tag">Recommended</span>
+                            <div class="battery-image"></div>
+                            <h3>Cinetrix 2.5</h3>
+                            <p class="battery-subtitle">2500 kWh Capacity<br>25000W Output<br>USD $100/day</p>
+                            <div class="battery-specs">
+                                <div class="spec-item">
+                                    <span class="spec-icon">⚡</span>
+                                    <span>1hr</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-icon">🏭</span>
+                                    <span>Indoor</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-icon">📏</span>
+                                    <span>5ft</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-icon">⚖️</span>
+                                    <span>1ft</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-icon">🔌</span>
+                                    <span>1ft</span>
+                                </div>
+                            </div>
+                            <div class="buttons">
+                                <a href="#" class="btn btn-primary">Rent</a>
+                                <a href="product-detail.html" class="btn btn-link">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="battery-card">
+                            <div class="battery-image"></div>
+                            <h3>Cinetrix 2.5</h3>
+                            <p class="battery-subtitle">2500 kWh Capacity<br>25000W Output<br>USD $100/day</p>
+                            <div class="battery-specs">
+                                <div class="spec-item">
+                                    <span class="spec-icon">⚡</span>
+                                    <span>1hr</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-icon">🏭</span>
+                                    <span>Indoor</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-icon">📏</span>
+                                    <span>5ft</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-icon">⚖️</span>
+                                    <span>1ft</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-icon">🔌</span>
+                                    <span>1ft</span>
+                                </div>
+                            </div>
+                            <div class="buttons">
+                                <a href="#" class="btn btn-primary">Rent</a>
+                                <a href="product-detail.html" class="btn btn-link">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section class="contact-section">
+                <div class="container">
+                    <h2>Contact</h2>
+                    <div class="contact-item">
+                        <span class="contact-label">Office</span>
+                        <div class="contact-details">
+                            <span>info@humble.io</span>
+                            <span class="contact-note">We will answer in less than 10 minutes</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-label">Hotline</span>
+                        <div class="contact-details">
+                            <span>+1 (619) 201-9332</span>
+                            <span class="contact-note">Available 24/7</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-label">Headquarters</span>
+                        <div class="contact-details">
+                            <span>1934 East Street<br>East Palo Alto, CA 94304<br>United States</span>
+                            <span class="contact-note">9-5 PM (PDT) on working days</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-label">New York Office</span>
+                        <div class="contact-details">
+                            <a href="#" class="btn btn-link">View</a>
                         </div>
                     </div>
                 </div>
@@ -131,8 +425,8 @@
                     <div class="link-column">
                         <h4>Explore</h4>
                         <ul>
-                            <li><a href="#">Energy Calculator</a></li>
-                            <li><a href="#">Usecases</a></li>
+                            <li><a href="energy_calculator.html">Energy Calculator</a></li>
+                            <li><a href="usecases.html">Usecases</a></li>
                         </ul>
                     </div>
                     <div class="link-column">
@@ -146,8 +440,8 @@
                         <h4>Company</h4>
                         <ul>
                             <li><a href="about.html">About Humble</a></li>
-                            <li><a href="#">Expert Articles</a></li>
-                            <li><a href="#">Careers</a></li>
+                            <li><a href="articles.html">Expert Articles</a></li>
+                            <li><a href="careers.html">Careers</a></li>
                             <li><a href="#">Contacts</a></li>
                         </ul>
                     </div>
@@ -163,9 +457,9 @@
                     <div class="link-column">
                         <h4>Legal</h4>
                         <ul>
-                            <li><a href="#">Terms and Conditions</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
-                            <li><a href="#">Return & Refund Policy</a></li>
+                            <li><a href="terms.html">Terms and Conditions</a></li>
+                            <li><a href="privacy.html">Privacy Policy</a></li>
+                            <li><a href="returns.html">Return & Refund Policy</a></li>
                         </ul>
                     </div>
                 </div>

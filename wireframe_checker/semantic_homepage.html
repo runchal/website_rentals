@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Humble - Battery Rentals</title>
+    <link rel="stylesheet" href="semantic_layout.css" />
+</head>
+<body>
+    <!-- Header with flex layout -->
+    <header>
+        <div class="logo">Humble</div>
+        <nav>
+            <div class="search-bar">
+                <input type="text" placeholder="Search" />
+            </div>
+            <ul>
+                <li><a href="#batteries">Batteries</a></li>
+                <li><a href="#accessories">Accessories</a></li>
+                <li><a href="#industries">Industries</a></li>
+                <li><a href="#support">Support</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+        <div class="cart">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <circle cx="9" cy="21" r="1"></circle>
+                <circle cx="20" cy="21" r="1"></circle>
+                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+            </svg>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero - Semantic flex centering -->
+        <section class="hero-semantic">
+            <p>LA's largest battery rental house</p>
+            <h1>Batteries for every situation.<br>Yeah, that one too.</h1>
+            <p>Starting at $100 USD / day</p>
+            <a href="#batteries" class="btn btn-primary">Start Shopping</a>
+        </section>
+
+        <!-- Explore Batteries - 3-card semantic grid -->
+        <section id="batteries" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Explore our batteries</h2>
+                    <a href="#" class="view-all">View all →</a>
+                </div>
+                <div class="grid-3">
+                    <div class="card card-tall">
+                        <span class="tag popular">Popular</span>
+                        <div class="card-image"></div>
+                        <h3>Humble 7</h3>
+                        <p>1kWh Capacity, 6000W Output</p>
+                        <p class="price">From USD $100/day</p>
+                        <div class="buttons">
+                            <a href="#" class="btn btn-primary">Rent</a>
+                            <a href="#" class="btn btn-secondary">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="card card-tall">
+                        <div class="card-image"></div>
+                        <h3>Humble Basic</h3>
+                        <p>1kWh Capacity, 3400W</p>
+                        <p class="price">From USD $80/day</p>
+                        <div class="buttons">
+                            <a href="#" class="btn btn-primary">Rent</a>
+                            <a href="#" class="btn btn-secondary">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="card card-tall">
+                        <div class="card-image"></div>
+                        <h3>Humble Pro</h3>
+                        <p>2kWh Capacity, 8000W</p>
+                        <p class="price">From USD $150/day</p>
+                        <div class="buttons">
+                            <a href="#" class="btn btn-primary">Rent</a>
+                            <a href="#" class="btn btn-secondary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Accessories - 4-card semantic grid -->
+        <section id="accessories" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Accessories</h2>
+                    <a href="#" class="view-all">View all →</a>
+                </div>
+                <div class="grid-4">
+                    <div class="card card-medium">
+                        <span class="tag new">New</span>
+                        <div class="card-image"></div>
+                        <h3>10ft Cable</h3>
+                        <p>1kWh Capacity, 6000W Output</p>
+                        <p class="price">From USD $10/day</p>
+                        <div class="buttons">
+                            <a href="#" class="btn btn-primary">Rent</a>
+                            <a href="#" class="btn btn-secondary">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="card card-medium">
+                        <div class="card-image"></div>
+                        <h3>Nanlite Parabolic Softbox 60</h3>
+                        <p>White, 60cm diameter</p>
+                        <p class="price">From USD $50/day</p>
+                        <div class="buttons">
+                            <a href="#" class="btn btn-primary">Rent</a>
+                            <a href="#" class="btn btn-secondary">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="card card-medium">
+                        <div class="card-image"></div>
+                        <h3>LEX 24 120v/208v Viceroy Power Rack</h3>
+                        <p>26" L x 24"W x 30"H</p>
+                        <p class="price">From USD $150/day</p>
+                        <div class="buttons">
+                            <a href="#" class="btn btn-primary">Rent</a>
+                            <a href="#" class="btn btn-secondary">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="card card-medium">
+                        <div class="card-image"></div>
+                        <h3>Cable Ramp 3</h3>
+                        <p>5 Channel Rubber Cable Protectors</p>
+                        <p class="price">From USD $10/day</p>
+                        <div class="buttons">
+                            <a href="#" class="btn btn-primary">Rent</a>
+                            <a href="#" class="btn btn-secondary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Industries - Special 3-card layout (large + 2 small) -->
+        <section id="industries" class="section">
+            <div class="container">
+                <h2>Industries</h2>
+                <div class="industries-grid">
+                    <div class="industry-card">
+                        <div>
+                            <h3>Film & TV Production</h3>
+                            <p>Power your shoots with reliable, silent battery solutions for any location.</p>
+                            <a href="#" class="btn btn-primary">Get Started</a>
+                        </div>
+                    </div>
+                    <div class="industry-card">
+                        <div>
+                            <h3>Live Events</h3>
+                            <p>Keep the show running with portable power solutions.</p>
+                            <a href="#" class="btn btn-secondary">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="industry-card">
+                        <div>
+                            <h3>Remote & Off-Grid Locations</h3>
+                            <p>Bring power anywhere with our portable battery systems.</p>
+                            <a href="#" class="btn btn-secondary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Advantages - 6-card semantic grid (3x2) -->
+        <section class="section">
+            <div class="container">
+                <h2>Advantages</h2>
+                <div class="grid-6">
+                    <div class="card card-short">
+                        <h3>24/7 Support</h3>
+                        <p>Humble provides backup and assistance around the clock.</p>
+                    </div>
+                    <div class="card card-short">
+                        <h3>Ready to go at project site in less than 2h</h3>
+                        <p>Fast delivery across LA area in under 2 hours.</p>
+                    </div>
+                    <div class="card card-short">
+                        <h3>Non disturbing operation</h3>
+                        <p>Keep power during early mornings and late nights.</p>
+                    </div>
+                    <div class="card card-short">
+                        <h3>Free Delivery & Pick-Up</h3>
+                        <p>Full-service solution delivered at your doorstep.</p>
+                    </div>
+                    <div class="card card-short">
+                        <h3>Indoors & Outdoors</h3>
+                        <p>Ready for both rugged outdoors and sensitive indoor spaces.</p>
+                    </div>
+                    <div class="card card-short">
+                        <h3>Construction</h3>
+                        <p>Essential for construction sites, powering tools and temporary offices.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="testimonials">
+            <div class="container">
+                <h2>Testimonials</h2>
+                <div class="testimonial">
+                    <div class="stars">★★★★★</div>
+                    <p class="quote">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
+                    <p><strong>John Doe</strong></p>
+                    <p>Film Producer</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trusted By -->
+        <section class="section">
+            <div class="container">
+                <h2 style="text-align: center; margin-bottom: 2rem;">Trusted by</h2>
+                <div class="trusted-logos">
+                    <div class="logo-placeholder">Logo</div>
+                    <div class="logo-placeholder">Logo</div>
+                    <div class="logo-placeholder">Logo</div>
+                    <div class="logo-placeholder">Logo</div>
+                    <div class="logo-placeholder">Logo</div>
+                    <div class="logo-placeholder">Logo</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bottom CTA -->
+        <section class="bottom-cta">
+            <div class="container">
+                <h2>Wherever, whenever our batteries are we are too.</h2>
+                <p>And wherever you look to Los Angeles County, our batteries will be there in 3 hours or less.</p>
+                <a href="#" class="btn btn-primary">Get a call from us now</a>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="section">
+            <div class="container">
+                <h2>Contact</h2>
+                <div class="contact-grid">
+                    <div class="contact-item">
+                        <h4>Office</h4>
+                        <p>info@humble.io</p>
+                    </div>
+                    <div class="contact-item">
+                        <h4>Phone</h4>
+                        <p>+1 (619) 207-5522</p>
+                    </div>
+                    <div class="contact-item">
+                        <h4>Headquarters</h4>
+                        <p>1234 Oak Street<br>Santa Monica, CA 90404<br>United States</p>
+                    </div>
+                    <div class="contact-item">
+                        <h4>Terms and Conditions</h4>
+                        <p><a href="#">View</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <h4>Privacy Policy</h4>
+                        <p><a href="#">View</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <div>
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="#">Batteries</a></li>
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">Industries</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="#">Energy Calculator</a></li>
+                        <li><a href="#">Use Cases</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Humble</a></li>
+                        <li><a href="#">Expert Articles</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Contacts</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Social</h4>
+                    <ul>
+                        <li><a href="#">X</a></li>
+                        <li><a href="#">Threads</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Facebook</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Terms and Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Return & Refund Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

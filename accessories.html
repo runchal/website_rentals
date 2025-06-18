@@ -8,11 +8,14 @@
     </head>
     <body>
         <header>
+            <div class="live-data">Live data: 1,209,002 kWh served</div>
             <div class="container">
                 <nav>
                     <div class="logo">Humble</div>
+                    <div class="search-bar">
+                        <input type="text" placeholder="Search" />
+                    </div>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
                         <li><a href="batteries.html">Batteries</a></li>
                         <li><a href="accessories.html">Accessories</a></li>
                         <li><a href="industries.html">Industries</a></li>
@@ -45,179 +48,221 @@
             </div>
         </header>
         <main>
-            <section class="product-listing-page">
+            <!-- Hero Section -->
+            <section class="hero accessory-hero">
                 <div class="container">
-                    <h1>Accessories</h1>
-                    <div class="full-product-grid">
-                        <div class="product-card">
-                            <div class="product-image"></div>
+                    <span class="hero-subtitle">And then there was light.</span>
+                    <h1>Nanlite Parabolic<br>Softbox 60</h1>
+                    <p class="hero-price">$50 / Day</p>
+                    <div class="hero-buttons">
+                        <a href="#" class="btn btn-primary">Rent Now</a>
+                        <a href="product-detail.html" class="btn btn-secondary">Learn More</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Accessories Section -->
+            <section class="accessory-section">
+                <div class="container">
+                    <h2>Accessories</h2>
+                    <div class="accessory-grid">
+                        <!-- Row 1 -->
+                        <div class="accessory-card">
+                            <span class="tag popular">Popular</span>
+                            <div class="accessory-image"></div>
                             <h3>10ft Cable</h3>
-                            <span class="tag new">New</span>
-                            <p class="specs">
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="24"
-                                    height="24"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    stroke-width="2"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    class="feather feather-maximize"
-                                >
-                                    <path
-                                        d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"
-                                    ></path></svg
-                                >1kWh Capacity, 6000W Output
-                            </p>
-                            <p class="price">From USD $10/day</p>
+                            <p class="accessory-subtitle">1kWh Capacity<br>6000W Output<br>USD $10/day</p>
+                            <div class="accessory-specs">
+                                <div class="spec-item">
+                                    <span class="spec-icon">⚡</span>
+                                    <span>200W</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-icon">📏</span>
+                                    <span>10ft</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-icon">🎭</span>
+                                    <span>5A</span>
+                                </div>
+                            </div>
                             <div class="buttons">
                                 <a href="#" class="btn btn-primary">Rent</a>
-                                <a
-                                    href="product-detail.html"
-                                    class="btn btn-secondary"
-                                    >Learn More</a
-                                >
+                                <a href="product-detail.html" class="btn btn-link">Learn More</a>
                             </div>
                         </div>
-                        <div class="product-card">
-                            <div class="product-image"></div>
+                        <div class="accessory-card">
+                            <div class="accessory-image"></div>
                             <h3>Nanlite Parabolic Softbox 60</h3>
-                            <p class="specs">
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="24"
-                                    height="24"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    stroke-width="2"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    class="feather feather-sun"
-                                >
-                                    <circle cx="12" cy="12" r="5"></circle>
-                                    <line x1="12" y1="1" x2="12" y2="3"></line>
-                                    <line
-                                        x1="12"
-                                        y1="21"
-                                        x2="12"
-                                        y2="23"
-                                    ></line>
-                                    <line
-                                        x1="4.22"
-                                        y1="4.22"
-                                        x2="5.64"
-                                        y2="5.64"
-                                    ></line>
-                                    <line
-                                        x1="18.36"
-                                        y1="18.36"
-                                        x2="19.78"
-                                        y2="19.78"
-                                    ></line>
-                                    <line x1="1" y1="12" x2="3" y2="12"></line>
-                                    <line
-                                        x1="21"
-                                        y1="12"
-                                        x2="23"
-                                        y2="12"
-                                    ></line>
-                                    <line
-                                        x1="4.22"
-                                        y1="19.78"
-                                        x2="5.64"
-                                        y2="18.36"
-                                    ></line>
-                                    <line
-                                        x1="18.36"
-                                        y1="5.64"
-                                        x2="19.78"
-                                        y2="4.22"
-                                    ></line></svg
-                                >White 60cm diameter
-                            </p>
-                            <p class="price">From USD $50/day</p>
+                            <p class="accessory-subtitle">White<br>60cm diameter<br>USD $50/day</p>
+                            <div class="accessory-specs">
+                                <div class="spec-item">
+                                    <span class="spec-icon">💡</span>
+                                    <span>120°</span>
+                                </div>
+                            </div>
                             <div class="buttons">
                                 <a href="#" class="btn btn-primary">Rent</a>
-                                <a
-                                    href="product-detail.html"
-                                    class="btn btn-secondary"
-                                    >Learn More</a
-                                >
+                                <a href="product-detail.html" class="btn btn-link">Learn More</a>
                             </div>
                         </div>
-                        <div class="product-card">
-                            <div class="product-image"></div>
+                        <div class="accessory-card">
+                            <span class="tag new">New</span>
+                            <div class="accessory-image"></div>
                             <h3>LEX 24 120v/208v Viceroy Power Rack</h3>
-                            <p class="specs">
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="24"
-                                    height="24"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    stroke-width="2"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    class="feather feather-box"
-                                >
-                                    <path
-                                        d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"
-                                    ></path>
-                                    <polyline
-                                        points="3.27 6.96 12 12.01 20.73 6.96"
-                                    ></polyline>
-                                    <line
-                                        x1="12"
-                                        y1="22.08"
-                                        x2="12"
-                                        y2="12"
-                                    ></line></svg
-                                >26"L x 24"W x 30"H
-                            </p>
-                            <p class="price">From USD $130/day</p>
+                            <p class="accessory-subtitle">26" L x 24"W x 30"H<br>From USD $150/day</p>
+                            <div class="accessory-specs">
+                                <div class="spec-item">
+                                    <span class="spec-icon">⚡</span>
+                                    <span>12k</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-icon">📏</span>
+                                    <span>5A</span>
+                                </div>
+                            </div>
                             <div class="buttons">
                                 <a href="#" class="btn btn-primary">Rent</a>
-                                <a
-                                    href="product-detail.html"
-                                    class="btn btn-secondary"
-                                    >Learn More</a
-                                >
+                                <a href="product-detail.html" class="btn btn-link">Learn More</a>
                             </div>
                         </div>
-                        <div class="product-card">
-                            <div class="product-image"></div>
-                            <h3>Cable Ramp 3'</h3>
-                            <p class="specs">
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="24"
-                                    height="24"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    stroke-width="2"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    class="feather feather-shield"
-                                >
-                                    <path
-                                        d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"
-                                    ></path></svg
-                                >5 Channel Rubber Cable Protectors
-                            </p>
-                            <p class="price">From USD $10/day</p>
+                        <div class="accessory-card">
+                            <div class="accessory-image"></div>
+                            <h3>Cable Ramp 3</h3>
+                            <p class="accessory-subtitle">5 Channel Rubber Cable<br>Protectors<br>From USD $10/day</p>
+                            <div class="accessory-specs">
+                                <div class="spec-item">
+                                    <span class="spec-icon">🚗</span>
+                                    <span>12t</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-icon">📏</span>
+                                    <span>3ft</span>
+                                </div>
+                            </div>
                             <div class="buttons">
                                 <a href="#" class="btn btn-primary">Rent</a>
-                                <a
-                                    href="product-detail.html"
-                                    class="btn btn-secondary"
-                                    >Learn More</a
-                                >
+                                <a href="product-detail.html" class="btn btn-link">Learn More</a>
                             </div>
+                        </div>
+                        <!-- Row 2 -->
+                        <div class="accessory-card">
+                            <span class="tag popular">Popular</span>
+                            <div class="accessory-image"></div>
+                            <h3>10ft Cable</h3>
+                            <p class="accessory-subtitle">1kWh Capacity<br>6000W Output<br>USD $10/day</p>
+                            <div class="accessory-specs">
+                                <div class="spec-item">
+                                    <span class="spec-icon">⚡</span>
+                                    <span>200W</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-icon">📏</span>
+                                    <span>10ft</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-icon">🎭</span>
+                                    <span>5A</span>
+                                </div>
+                            </div>
+                            <div class="buttons">
+                                <a href="#" class="btn btn-primary">Rent</a>
+                                <a href="product-detail.html" class="btn btn-link">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="accessory-card">
+                            <div class="accessory-image"></div>
+                            <h3>Nanlite Parabolic Softbox 60</h3>
+                            <p class="accessory-subtitle">White<br>60cm diameter<br>USD $50/day</p>
+                            <div class="accessory-specs">
+                                <div class="spec-item">
+                                    <span class="spec-icon">💡</span>
+                                    <span>120°</span>
+                                </div>
+                            </div>
+                            <div class="buttons">
+                                <a href="#" class="btn btn-primary">Rent</a>
+                                <a href="product-detail.html" class="btn btn-link">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="accessory-card">
+                            <span class="tag new">New</span>
+                            <div class="accessory-image"></div>
+                            <h3>LEX 24 120v/208v Viceroy Power Rack</h3>
+                            <p class="accessory-subtitle">26" L x 24"W x 30"H<br>From USD $150/day</p>
+                            <div class="accessory-specs">
+                                <div class="spec-item">
+                                    <span class="spec-icon">⚡</span>
+                                    <span>12k</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-icon">📏</span>
+                                    <span>5A</span>
+                                </div>
+                            </div>
+                            <div class="buttons">
+                                <a href="#" class="btn btn-primary">Rent</a>
+                                <a href="product-detail.html" class="btn btn-link">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="accessory-card">
+                            <div class="accessory-image"></div>
+                            <h3>Cable Ramp 3</h3>
+                            <p class="accessory-subtitle">5 Channel Rubber Cable<br>Protectors<br>From USD $10/day</p>
+                            <div class="accessory-specs">
+                                <div class="spec-item">
+                                    <span class="spec-icon">🚗</span>
+                                    <span>12t</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-icon">📏</span>
+                                    <span>3ft</span>
+                                </div>
+                            </div>
+                            <div class="buttons">
+                                <a href="#" class="btn btn-primary">Rent</a>
+                                <a href="product-detail.html" class="btn btn-link">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section class="contact-section">
+                <div class="container">
+                    <h2>Contact</h2>
+                    <div class="contact-item">
+                        <span class="contact-label">Office</span>
+                        <div class="contact-details">
+                            <span>info@humble.io</span>
+                            <span class="contact-note">Get an answer in less than 30 minutes</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-label">Phone</span>
+                        <div class="contact-details">
+                            <span>+1 (619) 207-5522</span>
+                            <span class="contact-note">Available 24/7</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-label">Headquarters</span>
+                        <div class="contact-details">
+                            <span>1234 Oak Street<br>Santa Monica, CA 90404<br>United States</span>
+                            <span class="contact-note">In-Person visits and booking only</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-label">Terms and Conditions</span>
+                        <div class="contact-details">
+                            <a href="#" class="btn btn-link">View</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-label">Privacy Policy</span>
+                        <div class="contact-details">
+                            <a href="#" class="btn btn-link">View</a>
                         </div>
                     </div>
                 </div>
@@ -237,8 +282,8 @@
                     <div class="link-column">
                         <h4>Explore</h4>
                         <ul>
-                            <li><a href="#">Energy Calculator</a></li>
-                            <li><a href="#">Usecases</a></li>
+                            <li><a href="energy_calculator.html">Energy Calculator</a></li>
+                            <li><a href="usecases.html">Usecases</a></li>
                         </ul>
                     </div>
                     <div class="link-column">
@@ -252,8 +297,8 @@
                         <h4>Company</h4>
                         <ul>
                             <li><a href="about.html">About Humble</a></li>
-                            <li><a href="#">Expert Articles</a></li>
-                            <li><a href="#">Careers</a></li>
+                            <li><a href="articles.html">Expert Articles</a></li>
+                            <li><a href="careers.html">Careers</a></li>
                             <li><a href="#">Contacts</a></li>
                         </ul>
                     </div>
@@ -269,9 +314,9 @@
                     <div class="link-column">
                         <h4>Legal</h4>
                         <ul>
-                            <li><a href="#">Terms and Conditions</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
-                            <li><a href="#">Return & Refund Policy</a></li>
+                            <li><a href="terms.html">Terms and Conditions</a></li>
+                            <li><a href="privacy.html">Privacy Policy</a></li>
+                            <li><a href="returns.html">Return & Refund Policy</a></li>
                         </ul>
                     </div>
                 </div>

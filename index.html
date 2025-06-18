@@ -8,11 +8,14 @@
     </head>
     <body>
         <header>
+            <div class="live-data">Live data: 1,209,002 kWh served</div>
             <div class="container">
                 <nav>
                     <div class="logo">Humble</div>
+                    <div class="search-bar">
+                        <input type="text" placeholder="Search" />
+                    </div>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
                         <li><a href="batteries.html">Batteries</a></li>
                         <li><a href="accessories.html">Accessories</a></li>
                         <li><a href="industries.html">Industries</a></li>
@@ -45,707 +48,236 @@
             </div>
         </header>
         <main>
-            <section class="hero">
+            <!-- Hero Section -->
+            <section class="hero-wireframe">
                 <div class="container">
-                    <h1>
-                        LA's largest battery rental house. Batteries for every
-                        situation. Yeah, that one too.
-                    </h1>
-                    <p>
-                        Free Delivery. Free backup generators. A support team
-                        whenever you need one.<br />Starting at $100 USD/day
-                    </p>
-                    <a href="batteries.html" class="btn btn-primary"
-                        >Start Shopping</a
-                    >
+                    <p class="hero-label">LA's largest battery rental house</p>
+                    <h1>Batteries for every situation.<br>Yeah, that one too.</h1>
+                    <p class="hero-price">Starting at $100 USD / day</p>
+                    <a href="#" class="btn btn-primary">Start Shopping</a>
                 </div>
             </section>
-            <section class="products">
+
+
+            <!-- Explore our batteries - Product cards section -->
+            <section class="explore-batteries">
                 <div class="container">
                     <div class="section-header">
                         <h2>Explore our batteries</h2>
-                        <a href="batteries.html" class="view-all">View All</a>
+                        <a href="#" class="view-all">View all →</a>
                     </div>
                     <div class="carousel-wrapper">
+                        <button class="carousel-arrow left">←</button>
                         <div class="product-grid">
                             <div class="product-card">
+                                <span class="tag popular">Popular</span>
                                 <div class="product-image"></div>
                                 <h3>Humble 7</h3>
-                                <span class="tag popular">Popular</span>
-                                <p class="specs">
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        width="24"
-                                        height="24"
-                                        viewBox="0 0 24 24"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        stroke-width="2"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        class="feather feather-clock"
-                                    >
-                                        <circle cx="12" cy="12" r="10"></circle>
-                                        <polyline
-                                            points="12 6 12 12 16 14"
-                                        ></polyline></svg
-                                    >1kWh Capacity, 6000W Output
-                                </p>
+                                <p class="specs">1kWh Capacity, 6000W Output</p>
                                 <p class="price">From USD $100/day</p>
                                 <div class="buttons">
                                     <a href="#" class="btn btn-primary">Rent</a>
-                                    <a
-                                        href="product-detail.html"
-                                        class="btn btn-secondary"
-                                        >Learn More</a
-                                    >
+                                    <a href="#" class="btn btn-secondary">Learn More</a>
                                 </div>
                             </div>
                             <div class="product-card">
                                 <div class="product-image"></div>
                                 <h3>Humble Basic</h3>
-                                <p class="specs">
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        width="24"
-                                        height="24"
-                                        viewBox="0 0 24 24"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        stroke-width="2"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        class="feather feather-zap"
-                                    >
-                                        <polygon
-                                            points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"
-                                        ></polygon></svg
-                                    >1kWh Capacity, 3400W
-                                </p>
+                                <p class="specs">1kWh Capacity, 3400W</p>
                                 <p class="price">From USD $80/day</p>
                                 <div class="buttons">
                                     <a href="#" class="btn btn-primary">Rent</a>
-                                    <a
-                                        href="product-detail.html"
-                                        class="btn btn-secondary"
-                                        >Learn More</a
-                                    >
+                                    <a href="#" class="btn btn-secondary">Learn More</a>
                                 </div>
                             </div>
                         </div>
-                        <button class="carousel-arrow left">
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="24"
-                                height="24"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="2"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                class="feather feather-arrow-left"
-                            >
-                                <line x1="19" y1="12" x2="5" y2="12"></line>
-                                <polyline points="12 19 5 12 12 5"></polyline>
-                            </svg>
-                        </button>
-                        <button class="carousel-arrow right">
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="24"
-                                height="24"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="2"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                class="feather feather-arrow-right"
-                            >
-                                <line x1="5" y1="12" x2="19" y2="12"></line>
-                                <polyline points="12 5 19 12 12 19"></polyline>
-                            </svg>
-                        </button>
+                        <button class="carousel-arrow right">→</button>
                     </div>
                 </div>
             </section>
-            <section class="products">
+
+            <!-- Accessories -->
+            <section class="accessories-preview">
                 <div class="container">
                     <div class="section-header">
                         <h2>Accessories</h2>
-                        <a href="accessories.html" class="view-all">View All</a>
+                        <a href="#" class="view-all">View all →</a>
                     </div>
                     <div class="carousel-wrapper">
+                        <button class="carousel-arrow left">←</button>
                         <div class="product-grid">
                             <div class="product-card">
+                                <span class="tag new">New</span>
                                 <div class="product-image"></div>
                                 <h3>10ft Cable</h3>
-                                <span class="tag new">New</span>
-                                <p class="specs">
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        width="24"
-                                        height="24"
-                                        viewBox="0 0 24 24"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        stroke-width="2"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        class="feather feather-maximize"
-                                    >
-                                        <path
-                                            d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"
-                                        ></path></svg
-                                    >1kWh Capacity, 6000W Output
-                                </p>
+                                <p class="specs">1kWh Capacity, 6000W Output</p>
                                 <p class="price">From USD $10/day</p>
                                 <div class="buttons">
                                     <a href="#" class="btn btn-primary">Rent</a>
-                                    <a
-                                        href="product-detail.html"
-                                        class="btn btn-secondary"
-                                        >Learn More</a
-                                    >
+                                    <a href="#" class="btn btn-secondary">Learn More</a>
                                 </div>
                             </div>
                             <div class="product-card">
                                 <div class="product-image"></div>
                                 <h3>Nanlite Parabolic Softbox 60</h3>
-                                <p class="specs">
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        width="24"
-                                        height="24"
-                                        viewBox="0 0 24 24"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        stroke-width="2"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        class="feather feather-sun"
-                                    >
-                                        <circle cx="12" cy="12" r="5"></circle>
-                                        <line
-                                            x1="12"
-                                            y1="1"
-                                            x2="12"
-                                            y2="3"
-                                        ></line>
-                                        <line
-                                            x1="12"
-                                            y1="21"
-                                            x2="12"
-                                            y2="23"
-                                        ></line>
-                                        <line
-                                            x1="4.22"
-                                            y1="4.22"
-                                            x2="5.64"
-                                            y2="5.64"
-                                        ></line>
-                                        <line
-                                            x1="18.36"
-                                            y1="18.36"
-                                            x2="19.78"
-                                            y2="19.78"
-                                        ></line>
-                                        <line
-                                            x1="1"
-                                            y1="12"
-                                            x2="3"
-                                            y2="12"
-                                        ></line>
-                                        <line
-                                            x1="21"
-                                            y1="12"
-                                            x2="23"
-                                            y2="12"
-                                        ></line>
-                                        <line
-                                            x1="4.22"
-                                            y1="19.78"
-                                            x2="5.64"
-                                            y2="18.36"
-                                        ></line>
-                                        <line
-                                            x1="18.36"
-                                            y1="5.64"
-                                            x2="19.78"
-                                            y2="4.22"
-                                        ></line></svg
-                                    >White 60cm diameter
-                                </p>
+                                <p class="specs">White 60cm diameter</p>
                                 <p class="price">From USD $50/day</p>
                                 <div class="buttons">
                                     <a href="#" class="btn btn-primary">Rent</a>
-                                    <a
-                                        href="product-detail.html"
-                                        class="btn btn-secondary"
-                                        >Learn More</a
-                                    >
+                                    <a href="#" class="btn btn-secondary">Learn More</a>
                                 </div>
                             </div>
                             <div class="product-card">
                                 <div class="product-image"></div>
                                 <h3>LEX 24 120v/208v Viceroy Power Rack</h3>
-                                <p class="specs">
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        width="24"
-                                        height="24"
-                                        viewBox="0 0 24 24"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        stroke-width="2"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        class="feather feather-box"
-                                    >
-                                        <path
-                                            d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"
-                                        ></path>
-                                        <polyline
-                                            points="3.27 6.96 12 12.01 20.73 6.96"
-                                        ></polyline>
-                                        <line
-                                            x1="12"
-                                            y1="22.08"
-                                            x2="12"
-                                            y2="12"
-                                        ></line></svg
-                                    >26"L x 24"W x 30"H
-                                </p>
-                                <p class="price">From USD $130/day</p>
+                                <p class="specs">26" L x 24"W x 30"H</p>
+                                <p class="price">From USD $150/day</p>
                                 <div class="buttons">
                                     <a href="#" class="btn btn-primary">Rent</a>
-                                    <a
-                                        href="product-detail.html"
-                                        class="btn btn-secondary"
-                                        >Learn More</a
-                                    >
+                                    <a href="#" class="btn btn-secondary">Learn More</a>
                                 </div>
                             </div>
                             <div class="product-card">
                                 <div class="product-image"></div>
-                                <h3>Cable Ramp 3'</h3>
-                                <p class="specs">
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        width="24"
-                                        height="24"
-                                        viewBox="0 0 24 24"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        stroke-width="2"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        class="feather feather-shield"
-                                    >
-                                        <path
-                                            d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"
-                                        ></path></svg
-                                    >5 Channel Rubber Cable Protectors
-                                </p>
+                                <h3>Cable Ramp 3</h3>
+                                <p class="specs">5 Channel Rubber Cable Protectors</p>
                                 <p class="price">From USD $10/day</p>
                                 <div class="buttons">
                                     <a href="#" class="btn btn-primary">Rent</a>
-                                    <a
-                                        href="product-detail.html"
-                                        class="btn btn-secondary"
-                                        >Learn More</a
-                                    >
+                                    <a href="#" class="btn btn-secondary">Learn More</a>
                                 </div>
                             </div>
                         </div>
-                        <button class="carousel-arrow left">
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="24"
-                                height="24"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="2"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                class="feather feather-arrow-left"
-                            >
-                                <line x1="19" y1="12" x2="5" y2="12"></line>
-                                <polyline points="12 19 5 12 12 5"></polyline>
-                            </svg>
-                        </button>
-                        <button class="carousel-arrow right">
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="24"
-                                height="24"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="2"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                class="feather feather-arrow-right"
-                            >
-                                <line x1="5" y1="12" x2="19" y2="12"></line>
-                                <polyline points="12 5 19 12 12 19"></polyline>
-                            </svg>
-                        </button>
+                        <button class="carousel-arrow right">→</button>
                     </div>
                 </div>
             </section>
-            <section class="industries">
+
+            <!-- Industries - 3 promotional banners -->
+            <section class="industries-promo">
                 <div class="container">
-                    <div class="section-header">
-                        <h2>Industries</h2>
-                        <a href="industries.html" class="view-all">View All</a>
-                    </div>
-                    <div class="carousel-wrapper">
-                        <div class="industry-grid">
-                            <div class="industry-card">
-                                <div class="industry-image"></div>
+                    <h2>Industries</h2>
+                    <div class="industry-promo-grid">
+                        <div class="industry-promo-card large">
+                            <div class="promo-content">
                                 <h3>Film & TV Production</h3>
-                                <p>
-                                    Power cameras, lights, monitors, and
-                                    equipment, enabling shooting in remote
-                                    locations without traditional power and
-                                    their downturns: noise, fumes and long power
-                                    cables.
-                                </p>
-                                <div class="buttons">
-                                    <a href="#" class="btn btn-primary"
-                                        >Rent or Customize Bundle</a
-                                    >
-                                    <a href="#" class="btn btn-secondary"
-                                        >Advantages</a
-                                    >
-                                </div>
-                            </div>
-                            <div class="industry-card">
-                                <div class="industry-image"></div>
-                                <h3>Live Events</h3>
-                                <p>
-                                    Power for stage equipment, sound systems,
-                                    lighting fixtures, and communication
-                                    devices, ensuring seamless performances
-                                    without relying on the grid.
-                                </p>
-                                <div class="buttons">
-                                    <a href="#" class="btn btn-primary"
-                                        >Rent or Customize Bundle</a
-                                    >
-                                    <a href="#" class="btn btn-secondary"
-                                        >Advantages</a
-                                    >
-                                </div>
-                            </div>
-                            <div class="industry-card">
-                                <div class="industry-image"></div>
-                                <h3>Remote & Off-Grid Locations</h3>
-                                <p>
-                                    Enjoy being removed from the city without
-                                    losing the civilization's perks.
-                                </p>
-                                <div class="buttons">
-                                    <a href="#" class="btn btn-primary"
-                                        >Rent or Customize Bundle</a
-                                    >
-                                    <a href="#" class="btn btn-secondary"
-                                        >Advantages</a
-                                    >
-                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <a href="#" class="btn btn-primary">Get Started</a>
                             </div>
                         </div>
-                        <button class="carousel-arrow left">
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="24"
-                                height="24"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="2"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                class="feather feather-arrow-left"
-                            >
-                                <line x1="19" y1="12" x2="5" y2="12"></line>
-                                <polyline points="12 19 5 12 12 5"></polyline>
-                            </svg>
-                        </button>
-                        <button class="carousel-arrow right">
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="24"
-                                height="24"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="2"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                class="feather feather-arrow-right"
-                            >
-                                <line x1="5" y1="12" x2="19" y2="12"></line>
-                                <polyline points="12 5 19 12 12 19"></polyline>
-                            </svg>
-                        </button>
+                        <div class="industry-promo-card">
+                            <div class="promo-content">
+                                <h3>Live Events</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <a href="#" class="btn btn-secondary">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="industry-promo-card">
+                            <div class="promo-content">
+                                <h3>Remote & Off-Grid Locations</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <a href="#" class="btn btn-secondary">Learn More</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
-            <section class="advantages-section">
+
+            <!-- Advantages -->
+            <section class="advantages">
                 <div class="container">
                     <h2>Advantages</h2>
                     <div class="advantages-grid">
-                        <div class="advantage-card a1">
+                        <div class="advantage-card">
                             <h3>24/7 Support</h3>
-                            <p>
-                                Humble provides backup and assistance around the
-                                clock.
-                            </p>
+                            <p>Humble provides backup and assistance around the clock.</p>
                         </div>
-                        <div class="advantage-card a2">
+                        <div class="advantage-card">
                             <h3>Ready to go at project site in less than 2h</h3>
-                            <p>
-                                Do you need power, and do you need it now?
-                                Humble will deliver all the energy your project
-                                needs in under 2 hours, in the LA area.
-                            </p>
+                            <p>So you need power, and do you need it now? Humble will deliver all the energy your project needs in under 2 hours. In the LA area.</p>
                         </div>
-                        <div class="advantage-card a3">
+                        <div class="advantage-card">
                             <h3>Non disturbing operation</h3>
-                            <p>
-                                Keep power during early mornings and late
-                                nights.
-                            </p>
+                            <p>Keep power during early mornings and late nights.</p>
                         </div>
-                        <div class="advantage-card a4">
+                        <div class="advantage-card">
                             <h3>Free Delivery & Pick-Up</h3>
-                            <p>
-                                One less problem for you to worry about. Humble
-                                is a full-service solution delivered at your
-                                doorstep.
-                            </p>
+                            <p>Free and problem for you to worry about. Humble is a full-service solution delivered at your doorstep.</p>
                         </div>
-                        <div class="advantage-card a5">
+                        <div class="advantage-card">
                             <h3>Indoors & Outdoors</h3>
-                            <p>
-                                Our solutions are suited for both the rugged
-                                outdoors and the sensitive indoor areas, without
-                                disturbing any of these.
-                            </p>
+                            <p>Our products are ready for both the rugged outdoors and the sensitive indoor spaces without affecting air or noise.</p>
+                        </div>
+                        <div class="advantage-card">
+                            <h3>Construction</h3>
+                            <p>Essential for construction sites, powering tools, lighting, communication devices, and temporary offices, ensuring continuous work progress and safety.</p>
                         </div>
                     </div>
                 </div>
             </section>
+
+            <!-- Testimonials -->
             <section class="testimonials">
                 <div class="container">
+                    <h2>Testimonials</h2>
                     <div class="testimonial-card">
-                        <div class="stars">
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="24"
-                                height="24"
-                                viewBox="0 0 24 24"
-                                fill="currentColor"
-                                stroke="currentColor"
-                                stroke-width="2"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                class="feather feather-star"
-                            >
-                                <polygon
-                                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
-                                ></polygon>
-                            </svg>
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="24"
-                                height="24"
-                                viewBox="0 0 24 24"
-                                fill="currentColor"
-                                stroke="currentColor"
-                                stroke-width="2"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                class="feather feather-star"
-                            >
-                                <polygon
-                                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
-                                ></polygon>
-                            </svg>
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="24"
-                                height="24"
-                                viewBox="0 0 24 24"
-                                fill="currentColor"
-                                stroke="currentColor"
-                                stroke-width="2"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                class="feather feather-star"
-                            >
-                                <polygon
-                                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
-                                ></polygon>
-                            </svg>
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="24"
-                                height="24"
-                                viewBox="0 0 24 24"
-                                fill="currentColor"
-                                stroke="currentColor"
-                                stroke-width="2"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                class="feather feather-star"
-                            >
-                                <polygon
-                                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
-                                ></polygon>
-                            </svg>
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="24"
-                                height="24"
-                                viewBox="0 0 24 24"
-                                fill="currentColor"
-                                stroke="currentColor"
-                                stroke-width="2"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                class="feather feather-star"
-                            >
-                                <polygon
-                                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
-                                ></polygon>
-                            </svg>
-                        </div>
-                        <p class="quote">
-                            Lorem ipsum pseyellig parea, anan yras. Vad apobel,
-                            än heteross renomi. Stenomåhans gigant.
-                        </p>
-                        <p class="author">Alex Koehlberger</p>
-                        <p class="title">
-                            Chief Lighting Technician at A24 Studios
-                        </p>
+                        <div class="stars">★★★★★</div>
+                        <p class="quote">"Lorem ipsum nyseisg pulvenvax seitan gras. Veid apobei, an heterass retcemi. Sicnonulhans gigset suprev ach stenoz."</p>
+                        <p class="author">Lorem Name</p>
+                        <p class="title">Title goes here</p>
                     </div>
                 </div>
             </section>
+
+            <!-- Trusted By -->
             <section class="trusted-by">
                 <div class="container">
                     <h2>Trusted by</h2>
                     <div class="logos">
-                        <svg
-                            class="logo-svg nbc"
-                            fill="#000000"
-                            height="200px"
-                            width="200px"
-                            version="1.1"
-                            id="Layer_1"
-                            xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink"
-                            viewBox="0 0 512 512"
-                            xml:space="preserve"
-                        >
-                            <g>
-                                <path
-                                    d="M256,0C114.624,0,0,114.624,0,256c0,141.376,114.624,256,256,256s256-114.624,256-256C512,114.624,397.376,0,256,0z
-		 M189.504,384h-38.688V256h38.688V384z M256,384h-41.024V256H256V384z M322.496,384h38.688V256h-38.688V384z M384,256h-38.816V128
-		h38.816V256z M128,256h38.816V128H128V256z"
-                                />
-                            </g>
-                        </svg>
-                        <svg
-                            class="logo-svg wb"
-                            height="200px"
-                            width="200px"
-                            version="1.1"
-                            id="Layer_1"
-                            xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink"
-                            viewBox="0 0 512 512"
-                            enable-background="new 0 0 512 512"
-                            xml:space="preserve"
-                        >
-                            <path
-                                d="M256,0C114.609,0,0,114.609,0,256s114.609,256,256,256s256-114.609,256-256S397.391,0,256,0z M192,384h-64V128h64V384z
-	 M320,384h-64V128h64V384z M384,384h64v-64h-64V384z M384,256h64v-64h-64V256z M384,192h64v-64h-64V192z"
-                            />
-                        </svg>
-                        <svg
-                            class="logo-svg abc"
-                            fill="#000000"
-                            height="200px"
-                            width="200px"
-                            version="1.1"
-                            id="Layer_1"
-                            xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink"
-                            viewBox="0 0 512 512"
-                            enable-background="new 0 0 512 512"
-                            xml:space="preserve"
-                        >
-                            <path
-                                d="M256,0C114.609,0,0,114.609,0,256s114.609,256,256,256s256-114.609,256-256S397.391,0,256,0z M256,448
-	c-106.031,0-192-85.969-192-192S149.969,64,256,64s192,85.969,192,192S362.031,448,256,448z M256,128
-	c-70.688,0-128,57.313-128,128s57.313,128,128,128s128-57.313,128-128S326.688,128,256,128z"
-                            />
-                        </svg>
-                        <svg
-                            class="logo-svg fox"
-                            fill="#000000"
-                            height="200px"
-                            width="200px"
-                            version="1.1"
-                            id="Layer_1"
-                            xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink"
-                            viewBox="0 0 512 512"
-                            enable-background="new 0 0 512 512"
-                            xml:space="preserve"
-                        >
-                            <path
-                                d="M256,0C114.609,0,0,114.609,0,256s114.609,256,256,256s256-114.609,256-256S397.391,0,256,0z M256,448
-	c-106.031,0-192-85.969-192-192S149.969,64,256,64s192,85.969,192,192S362.031,448,256,448z M256,128L128,384h64l32-96h64l32,96
-	h64L256,128z"
-                            />
-                        </svg>
+                        <div class="logo-placeholder">Logo</div>
+                        <div class="logo-placeholder">Logo</div>
+                        <div class="logo-placeholder">Logo</div>
+                        <div class="logo-placeholder">Logo</div>
+                        <div class="logo-placeholder">Logo</div>
+                        <div class="logo-placeholder">Logo</div>
                     </div>
                 </div>
             </section>
-            <section class="cta">
+
+            <!-- Bottom CTA -->
+            <section class="bottom-cta">
                 <div class="container">
-                    <h2>Wherever, whenever our batteries are, we are too.</h2>
-                    <p>
-                        And wherever you are in Los Angeles County, our
-                        batteries will be there in 3 hours or less.
-                    </p>
-                    <a href="#" class="btn btn-primary"
-                        >Get a call from us now</a
-                    >
+                    <h2>Wherever, whenever our batteries are we are too.</h2>
+                    <p>And wherever you look to Los Angeles County, our batteries will be there in 3 hours or less.</p>
+                    <a href="#" class="btn btn-primary">Get a call from us now</a>
                 </div>
             </section>
-            <section class="contact-section">
+
+            <!-- Contact -->
+            <section class="contact-simple">
                 <div class="container">
-                    <div class="contact-item">
-                        <span class="contact-label">EMAIL</span>
-                        <span class="contact-value">info@humble.la</span>
-                    </div>
-                    <div class="contact-item">
-                        <span class="contact-label">PHONE</span>
-                        <span class="contact-value">+1 (601) 207-0592</span>
-                    </div>
-                    <div class="contact-item">
-                        <span class="contact-label">HEADQUARTERS</span>
-                        <span class="contact-value"
-                            >1234 Oak Street<br />Santa Monica, CA 90404<br />United
-                            States</span
-                        >
+                    <h2>Contact</h2>
+                    <div class="contact-row">
+                        <div>
+                            <h4>Office</h4>
+                            <p>info@humble.io</p>
+                        </div>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+1 (619) 207-5522</p>
+                        </div>
+                        <div>
+                            <h4>Headquarters</h4>
+                            <p>1234 Oak Street<br>Santa Monica, CA 90404<br>United States</p>
+                        </div>
+                        <div>
+                            <h4>Terms and Conditions</h4>
+                            <a href="#">View</a>
+                        </div>
+                        <div>
+                            <h4>Privacy Policy</h4>
+                            <a href="#">View</a>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -764,8 +296,8 @@
                     <div class="link-column">
                         <h4>Explore</h4>
                         <ul>
-                            <li><a href="#">Energy Calculator</a></li>
-                            <li><a href="#">Usecases</a></li>
+                            <li><a href="energy_calculator.html">Energy Calculator</a></li>
+                            <li><a href="usecases.html">Usecases</a></li>
                         </ul>
                     </div>
                     <div class="link-column">
@@ -778,9 +310,9 @@
                     <div class="link-column">
                         <h4>Company</h4>
                         <ul>
-                            <li><a href="#">About Humble</a></li>
-                            <li><a href="#">Expert Articles</a></li>
-                            <li><a href="#">Careers</a></li>
+                            <li><a href="about.html">About Humble</a></li>
+                            <li><a href="articles.html">Expert Articles</a></li>
+                            <li><a href="careers.html">Careers</a></li>
                             <li><a href="#">Contacts</a></li>
                         </ul>
                     </div>
@@ -796,9 +328,9 @@
                     <div class="link-column">
                         <h4>Legal</h4>
                         <ul>
-                            <li><a href="#">Terms and Conditions</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
-                            <li><a href="#">Return & Refund Policy</a></li>
+                            <li><a href="terms.html">Terms and Conditions</a></li>
+                            <li><a href="privacy.html">Privacy Policy</a></li>
+                            <li><a href="returns.html">Return & Refund Policy</a></li>
                         </ul>
                     </div>
                 </div>
